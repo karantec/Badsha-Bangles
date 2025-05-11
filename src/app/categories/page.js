@@ -184,70 +184,22 @@ const QuickViewModal = ({ item, onClose }) => {
           </button>
 
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 p-6">
+            <div className="w-full p-6">
               <Image
                 src={item.image}
                 alt={item.name}
-                width={500}
-                height={500}
+                width={1000}
+                height={1000}
                 className="w-full h-auto object-cover rounded-lg"
               />
             </div>
 
-            <div className="md:w-1/2 p-6">
-              <h2 className="text-2xl font-bold text-gray-800 mb-2">
-                {item.name}
-              </h2>
-              <p className="text-xl font-semibold text-[#83272A] mb-4">
-                ₹{item.price.toLocaleString()}
-              </p>
-
+            {/* <div className="md:w-1/2 p-6">
               <div className="mb-6">
                 <h3 className="text-gray-700 font-medium mb-2">Description</h3>
                 <p className="text-gray-600">{item.description}</p>
               </div>
-
-              <div className="mb-6">
-                <h3 className="text-gray-700 font-medium mb-2">Category</h3>
-                <p className="text-gray-600 capitalize">{item.category}</p>
-              </div>
-
-              <div className="space-y-4">
-                <button className="w-full py-3 bg-[#83272A] text-white rounded-md font-medium hover:bg-[#6d2023] transition-colors flex items-center justify-center">
-                  <svg
-                    className="w-5 h-5 mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                    />
-                  </svg>
-                  Add to Cart
-                </button>
-
-                <button className="w-full py-3 border border-gray-300 text-gray-700 rounded-md font-medium hover:bg-gray-50 transition-colors flex items-center justify-center">
-                  <svg
-                    className="w-5 h-5 mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                    />
-                  </svg>
-                  Add to Wishlist
-                </button>
-              </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

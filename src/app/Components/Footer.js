@@ -4,6 +4,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import contact from "/public/contact.jpg";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -26,7 +27,7 @@ export default function Footer() {
             <Link href="/">
               <div className="mb-4">
                 <Image
-                  src="/api/placeholder/120/80"
+                  src={contact}
                   alt="Badsha Bangal Logo"
                   width={120}
                   height={80}

@@ -4,7 +4,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import contact from "/public/contact.jpg";
+import logo from "/public/bblogo.png";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -18,7 +18,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className=" bottom-0 left-0 right-0 bg-amber-800 text-white z-10">
+    <footer className=" bottom-0 left-0 right-0 bg-[#83272A] text-white z-10">
       <div className="container mx-auto px-4 py-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
@@ -27,10 +27,10 @@ export default function Footer() {
             <Link href="/">
               <div className="mb-4">
                 <Image
-                  src={contact}
+                  src={logo}
                   alt="Badsha Bangal Logo"
                   width={120}
-                  height={80}
+                  height={300}
                   className="mb-2"
                 />
                 <div className="text-lg font-serif tracking-wider">

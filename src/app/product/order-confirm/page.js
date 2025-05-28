@@ -30,7 +30,7 @@ const OrderConfirmation = () => {
 
   return (
     <div className="min-h-screen bg-[#FFF6F6] p-4 ">
-      <div className="bg-[#FFF6F6] rounded-lg overflow-hidden ">
+      <div className="bg-[#FFF6F6] rounded-lg overflow-hidden  p-10 ">
         {/* Header with Icon and Title */}
         <div className="flex items-center mb-8  justify-center">
           <Image src={orderConfirmHeader} height={70} width={70} />
@@ -43,9 +43,9 @@ const OrderConfirmation = () => {
         </div>
 
         {/* Content Area */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 ">
           {/* Product Section */}
-          <div className="flex gap-6 pb-6 p-10">
+          <div className="flex gap-6 ">
             <div className="flex-none w-48 h-48 rounded-md overflow-hidden">
               <div className="relative w-full h-full">
                 <Image
@@ -79,21 +79,21 @@ const OrderConfirmation = () => {
 
               <div className="flex ">
                 <div className=" pr-4 py-2">
-                  <h3 className="text-sm text-gray-500 font-normal">Size</h3>
+                  <h3 className="text-md text-gray-500 font-normal">Size</h3>
                   <p className="text-base text-gray-900">
                     {orderDetails.product.size}
                   </p>
                 </div>
-                <div className="w-px bg-gray-200"></div>
+                <div className="w-px bg-[#FEA3A3] my-4 p-[0.5px]"></div>
                 <div className=" px-4 py-2">
-                  <h3 className="text-sm text-gray-500 font-normal">Colour</h3>
+                  <h3 className="text-md text-gray-500 font-normal">Colour</h3>
                   <p className="text-base text-gray-900">
                     {orderDetails.product.colour}
                   </p>
                 </div>
-                <div className="w-px bg-gray-200"></div>
+                <div className="w-px bg-[#FEA3A3] my-4 p-[0.5px]"></div>
                 <div className=" pl-4 py-2">
-                  <h3 className="text-sm text-gray-500 font-normal">
+                  <h3 className="text-md text-gray-500 font-normal">
                     Material
                   </h3>
                   <p className="text-base text-gray-900">
@@ -105,16 +105,14 @@ const OrderConfirmation = () => {
           </div>
 
           {/* Price Section */}
-          <div className="flex py-4">
-            <div className="flex flex-col">
-              <h3 className="text-sm text-gray-500 font-normal px-10 py-1">
-                Price
-              </h3>
-              <span className="text-xl font-semibold text-gray-900 mt-1 m-1 pl-3   py-2 bg-white">
+          <div className="flex  ">
+            <div className="flex flex-col  justify-start w-1/6 px-2">
+              <h3 className="text-sm text-gray-500 font-normal  py-1">Price</h3>
+              <span className="text-xl font-semibold text-gray-900 mt-1  bg-white ">
                 {orderDetails.product.price}
               </span>
             </div>
-            <div className="flex flex-col gap-4 pb-6 px-12 bg-white py-2">
+            <div className="flex flex-col gap-4   p-4 bg-white">
               <div>
                 <h3 className="text-sm text-gray-500 font-normal">Name</h3>
                 <p className="text-base text-gray-900">
@@ -123,7 +121,7 @@ const OrderConfirmation = () => {
               </div>
 
               <div className="flex">
-                <div className="flex-1">
+                <div className="flex-1 ">
                   <h3 className="text-sm text-gray-500 font-normal">Email</h3>
                   <p className="text-base text-gray-900">
                     {orderDetails.customer.email}

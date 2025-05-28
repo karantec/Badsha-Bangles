@@ -19,7 +19,7 @@ export default function Footer() {
 
   return (
     <footer className=" bottom-0 left-0 right-0 bg-[#83272A] text-white z-10">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto  px-4 py-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Logo Column */}

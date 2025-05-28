@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 
 import contact from "/public/contact.jpg";
-import contactbg from "/public/contactbg.png";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -51,9 +50,9 @@ export default function ContactPage() {
           <div className="w-50 h-1 bg-red-800 mx-auto"></div>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 max-w-6xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12  ">
           {/* Left side - Image */}
-          <div className="lg:w-1/2 flex justify-center">
+          <div className="lg:w-1/2 flex justify-center ">
             <div className="relative">
               <div className="w-80 h-96 md:w-96 md:h-112 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 <img
@@ -70,9 +69,9 @@ export default function ContactPage() {
           </div>
 
           {/* Right side - Contact Form and Info */}
-          <div className="lg:w-1/2 w-full max-w-md lg:max-w-none">
+          <div className="lg:w-1/2 w-full max-w-md lg:max-w-none flex justify-between pr-10">
             {/* Contact Form */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl mb-8">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 bg-red-400 shadow-xl mb-4">
               <div className="space-y-6">
                 <div>
                   <div className="block text-gray-700 text-sm font-medium mb-2">

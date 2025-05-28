@@ -214,11 +214,11 @@ export default function LoginPage() {
       </div>
 
       {/* Right side - Auth Form */}
-      <div className="w-full lg:w-1/2 flex items-center justify-center p-8 bg-gray-50">
+      <div className="w-full lg:w-1/2 flex items-center justify-center p-8 bg-[#FFF3F3]">
         <div className="w-full max-w-md space-y-8">
           {/* Header */}
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+          <div className="">
+            <h2 className="text-3xl font-bold text-[#83272A] mb-2">
               {isSignup ? "Sign Up" : "Login"}
             </h2>
             <p className="text-gray-600">
@@ -269,13 +269,10 @@ export default function LoginPage() {
             )}
 
             {/* Divider */}
-            <div className="relative">
-              <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-gray-300"></div>
-              </div>
-              <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-gray-50 text-gray-500">Or</span>
-              </div>
+            <div className=" flex items-center">
+              <div className="flex-1 h-[2px] bg-[#4D4D4D]"></div>
+              <div className="px-4 text-[#4D4D4D]">Or</div>
+              <div className="flex-1 h-[2px] bg-[#4D4D4D]"></div>
             </div>
 
             {/* Social Login Buttons */}

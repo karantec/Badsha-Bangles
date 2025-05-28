@@ -447,7 +447,7 @@ export default function JewelryPage() {
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="rounded-md border border-gray-300 bg-white pl-3 pr-8 py-2 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-[#83272A] focus:border-[#83272A]"
+                  className="rounded-md border border-gray-300 bg-[#83272A] pl-3 pr-8 py-2 text-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-[#83272A] focus:border-[#83272A]"
                 >
                   <option value="featured">Featured</option>
                   <option value="price-low">Price: Low to High</option>

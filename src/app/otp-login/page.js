@@ -148,14 +148,14 @@ export default function OTPVerificationPage() {
       </div>
 
       {/* Right side - OTP Verification Form */}
-      <div className="w-full lg:w-1/2 flex items-center justify-center p-8 bg-gray-50">
+      <div className="w-full lg:w-1/2 flex items-center justify-center p-8 bg-[#FFF3F3]">
         <div className="w-full max-w-md space-y-8">
           {/* Header */}
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+          <div className="">
+            <h2 className="text-3xl font-bold text-[#83272A] mb-2">
               OTP Verification
             </h2>
-            <p className="text-gray-600 text-sm">
+            <p className="text-gray-600 text-normal font-bold">
               Just some details to get you in!
             </p>
           </div>
@@ -192,7 +192,7 @@ export default function OTPVerificationPage() {
             </div>
 
             {/* Resend OTP */}
-            <div className="text-center">
+            <div className="">
               <button
                 type="button"
                 onClick={handleResendOTP}

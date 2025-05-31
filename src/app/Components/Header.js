@@ -38,9 +38,9 @@ export default function Header() {
               {[
                 ["HOME", "/"],
                 ["CATEGORIES", "/categories"],
-                ["NEW ARRIVALS", "/new-arrivals"],
-                ["BESTSELLERS", "/bestsellers"],
-                ["OFFERS", "/offers"],
+                ["NEW ARRIVALS", "/new-arrival"],
+                ["BESTSELLERS", "/bestseller"],
+                ["OFFERS", "/offer"],
                 ["CONTACT US", "/contact-us"],
               ].map(([label, href]) => (
                 <li key={label}>
@@ -57,9 +57,9 @@ export default function Header() {
 
           {/* Desktop Icons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="/search" aria-label="Search">
+            {/* <Link href="/search" aria-label="Search">
               <FiSearch className="w-5 h-5" />
-            </Link>
+            </Link> */}
             <Link href="/wishlist" aria-label="Wishlist">
               <FiHeart className="w-5 h-5" />
             </Link>
@@ -79,9 +79,9 @@ export default function Header() {
               {[
                 ["HOME", "/"],
                 ["CATEGORIES", "/categories"],
-                ["NEW ARRIVALS", "/new-arrivals"],
-                ["BESTSELLERS", "/bestsellers"],
-                ["OFFERS", "/offers"],
+                ["NEW ARRIVALS", "/new-arrival"],
+                ["BESTSELLERS", "/bestseller"],
+                ["OFFERS", "/offer"],
                 ["CONTACT US", "/contact-us"],
               ].map(([label, href]) => (
                 <li key={label}>

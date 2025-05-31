@@ -18,90 +18,127 @@ export default function Footer() {
   };
 
   return (
-    <footer className=" bottom-0 left-0 right-0 bg-[#83272A] text-white z-10">
-      <div className="container mx-auto  px-4 py-8">
+    <footer className="bottom-0 left-0 right-0 bg-[#83272A] text-white z-10">
+      <div className="container mx-auto px-4 py-12">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo Column */}
-          <div className="md:col-span-1">
-            <Link href="/">
-              <div className="mb-4">
-                <Image
-                  src={logo}
-                  alt="Badsha Bangal Logo"
-                  width={120}
-                  height={300}
-                  className="mb-2"
-                />
-                <div className="text-lg font-serif tracking-wider">
+          <div className="lg:col-span-1 md:col-span-2 lg:col-span-1">
+            <Link href="/" className="block">
+              <div className="mb-6">
+                <div className="relative w-40 h-20 ">
+                  <Image
+                    src={logo}
+                    alt="Badsha Bangal Logo"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+                <div className="text-xl font-serif font-bold tracking-wider leading-tight">
                   BADSHA
                   <br />
                   BANGAL
                 </div>
+                <p className="text-sm text-red-200 mt-2">
+                  Exquisite jewelry for every occasion
+                </p>
               </div>
             </Link>
           </div>
 
           {/* Customer Services */}
-          <div className="md:col-span-1">
-            <h3 className="text-sm font-medium uppercase mb-4">
+          <div className="lg:col-span-1">
+            <h3 className="text-lg font-semibold mb-4 text-red-100">
               Customer Services
             </h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/contact" className="hover:underline">
+                <Link
+                  href="/contact"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/track-order" className="hover:underline">
+                <Link
+                  href="/track-order"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Track your Order
                 </Link>
               </li>
               <li>
-                <Link href="/shipping-returns" className="hover:underline">
+                <Link
+                  href="/shipping-returns"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Shipping & Returns
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="hover:underline">
+                <Link
+                  href="/faq"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/appointment" className="hover:underline">
-                  Schedule an appointment
+                <Link
+                  href="/appointment"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
+                  Schedule an Appointment
                 </Link>
               </li>
             </ul>
           </div>
 
           {/* About Us */}
-          <div className="md:col-span-1">
-            <h3 className="text-sm font-medium uppercase mb-4">About Us</h3>
-            <ul className="space-y-2 text-sm">
+          <div className="lg:col-span-1">
+            <h3 className="text-lg font-semibold mb-4 text-red-100">
+              About Us
+            </h3>
+            <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/origins" className="hover:underline">
+                <Link
+                  href="/origins"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Origins
                 </Link>
               </li>
               <li>
-                <Link href="/purpose" className="hover:underline">
+                <Link
+                  href="/purpose"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Our Purpose
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="hover:underline">
+                <Link
+                  href="/careers"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/sustainability" className="hover:underline">
+                <Link
+                  href="/sustainability"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Sustainability
                 </Link>
               </li>
               <li>
-                <Link href="/giving-back" className="hover:underline">
+                <Link
+                  href="/giving-back"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Giving Back
                 </Link>
               </li>
@@ -109,28 +146,40 @@ export default function Footer() {
           </div>
 
           {/* Material Care */}
-          <div className="md:col-span-1">
-            <h3 className="text-sm font-medium uppercase mb-4">
+          <div className="lg:col-span-1">
+            <h3 className="text-lg font-semibold mb-4 text-red-100">
               Material Care
             </h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/jewelry-repair" className="hover:underline">
+                <Link
+                  href="/jewelry-repair"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Jewelry Repair
                 </Link>
               </li>
               <li>
-                <Link href="/sizing" className="hover:underline">
+                <Link
+                  href="/sizing"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Sizing
                 </Link>
               </li>
               <li>
-                <Link href="/styling-tips" className="hover:underline">
+                <Link
+                  href="/styling-tips"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Styling Tips
                 </Link>
               </li>
               <li>
-                <Link href="/allergy-resources" className="hover:underline">
+                <Link
+                  href="/allergy-resources"
+                  className="hover:text-red-200 transition-colors duration-200"
+                >
                   Metal Allergy Resources
                 </Link>
               </li>
@@ -138,25 +187,27 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div className="md:col-span-1">
-            <h3 className="font-medium mb-2">You can be one step ahead.</h3>
-            <p className="text-sm mb-4">
-              Sign up to hear about our updates on the dot.
+          <div className="lg:col-span-1">
+            <h3 className="text-lg font-semibold mb-3 text-red-100">
+              Stay Connected
+            </h3>
+            <p className="text-sm mb-4 text-red-200">
+              Sign up to hear about our latest updates and exclusive offers.
             </p>
 
             <form onSubmit={handleSubscribe} className="mb-6">
-              <div className="flex">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Your email address"
-                  className="py-2 px-3 w-full text-black text-sm"
+                  className="flex-1 py-2 px-3 text-gray-900 text-sm rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
                   required
                 />
                 <button
                   type="submit"
-                  className="bg-white text-amber-800 text-xs font-medium py-2 px-3 whitespace-nowrap"
+                  className="bg-white text-[#83272A] text-sm font-semibold py-2 px-4 rounded-md hover:bg-red-100 transition-colors duration-200 whitespace-nowrap"
                 >
                   SIGN UP
                 </button>
@@ -164,10 +215,14 @@ export default function Footer() {
             </form>
 
             {/* Social Media Icons */}
-            <div className="flex space-x-6">
-              <Link href="https://instagram.com" aria-label="Instagram">
+            <div className="flex space-x-4">
+              <Link
+                href="https://instagram.com"
+                aria-label="Instagram"
+                className="hover:text-red-200 transition-colors duration-200"
+              >
                 <svg
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -179,9 +234,13 @@ export default function Footer() {
                   />
                 </svg>
               </Link>
-              <Link href="https://twitter.com" aria-label="Twitter">
+              <Link
+                href="https://twitter.com"
+                aria-label="Twitter"
+                className="hover:text-red-200 transition-colors duration-200"
+              >
                 <svg
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -189,9 +248,13 @@ export default function Footer() {
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
               </Link>
-              <Link href="https://facebook.com" aria-label="Facebook">
+              <Link
+                href="https://facebook.com"
+                aria-label="Facebook"
+                className="hover:text-red-200 transition-colors duration-200"
+              >
                 <svg
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -203,9 +266,13 @@ export default function Footer() {
                   />
                 </svg>
               </Link>
-              <Link href="https://youtube.com" aria-label="YouTube">
+              <Link
+                href="https://youtube.com"
+                aria-label="YouTube"
+                className="hover:text-red-200 transition-colors duration-200"
+              >
                 <svg
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -217,9 +284,13 @@ export default function Footer() {
                   />
                 </svg>
               </Link>
-              <Link href="https://linkedin.com" aria-label="LinkedIn">
+              <Link
+                href="https://linkedin.com"
+                aria-label="LinkedIn"
+                className="hover:text-red-200 transition-colors duration-200"
+              >
                 <svg
-                  className="w-5 h-5"
+                  className="w-6 h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -232,26 +303,44 @@ export default function Footer() {
         </div>
 
         {/* Bottom Footer Legal Links */}
-        <div className="mt-8 pt-4 border-t border-amber-700 text-xs flex flex-wrap justify-center space-x-4">
-          <Link href="/privacy" className="hover:underline">
-            PRIVACY POLICY
-          </Link>
-          <span className="text-amber-700">•</span>
-          <Link href="/terms" className="hover:underline">
-            TERMS OF USE
-          </Link>
-          <span className="text-amber-700">•</span>
-          <Link href="/sitemap" className="hover:underline">
-            SITEMAP
-          </Link>
-          <span className="text-amber-700">•</span>
-          <Link href="/do-not-sell" className="hover:underline">
-            DO NOT SELL MY INFORMATION
-          </Link>
-          <span className="text-amber-700">•</span>
-          <Link href="/cookies" className="hover:underline">
-            COOKIES
-          </Link>
+        <div className="mt-12 pt-6 border-t border-red-700/30">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="text-sm text-red-200">
+              © 2024 Badsha Bangal. All rights reserved.
+            </div>
+            <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-xs">
+              <Link
+                href="/privacy"
+                className="hover:text-red-200 transition-colors duration-200"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
+                className="hover:text-red-200 transition-colors duration-200"
+              >
+                Terms of Use
+              </Link>
+              <Link
+                href="/sitemap"
+                className="hover:text-red-200 transition-colors duration-200"
+              >
+                Sitemap
+              </Link>
+              <Link
+                href="/do-not-sell"
+                className="hover:text-red-200 transition-colors duration-200"
+              >
+                Do Not Sell My Information
+              </Link>
+              <Link
+                href="/cookies"
+                className="hover:text-red-200 transition-colors duration-200"
+              >
+                Cookies
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

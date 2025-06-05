@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <Header />
 
         {/* Main Content - Adding padding to account for fixed header and footer */}
-        <main className="flex-grow mt-20 mb-16">{children}</main>
+        <main className="flex-grow mt-14 ">{children}</main>
 
         {/* Fixed Footer Component */}
         <Footer />

@@ -123,11 +123,11 @@ const JewelleryBestSellers = () => {
 
       {/* Best Sellers Section */}
       <div>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-8 ml-7">
           Best Sellers
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
           {selectedProducts.map((product) => (
             <div
               key={product.id}
@@ -182,7 +182,7 @@ const JewelleryBestSellers = () => {
         </div>
 
         {/* Pagination Controls */}
-        <div className="flex justify-center mt-10 space-x-4">
+        <div className="flex justify-center mt-10 space-x-4 mb-5">
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}

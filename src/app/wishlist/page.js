@@ -101,7 +101,9 @@ const JewelryWishlist = () => {
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-4">
-          <h1 className="text-2xl font-bold text-gray-800">Jewellery Box</h1>
+          <h1 className="text-2xl font-bold text-gray-800 ml-7">
+            Jewellery Box
+          </h1>
           <span className="bg-gray-200 text-gray-600 px-3 py-1 rounded-full text-sm">
             ({jewelryProducts.length})
           </span>
@@ -119,7 +121,7 @@ const JewelryWishlist = () => {
       </div>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
         {jewelryProducts.map((product) => (
           <div
             key={product.id}

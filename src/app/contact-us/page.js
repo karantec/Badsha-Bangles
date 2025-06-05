@@ -125,7 +125,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-6">
+            <div className="space-y-6 p-7">
               {/* Email */}
               <div className="flex items-center space-x-4 bg-white/60 backdrop-blur-sm rounded-xl p-4 shadow-md">
                 <div className="bg-red-800 p-3 rounded-full">
